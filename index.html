@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Muhammad Muzamil — Portfolio</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      background: #f0f0f0;
+    }
+    #loader {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #555;
+      font-family: system-ui, Arial, sans-serif;
+    }
+    iframe {
+      border: none;
+      width: 100%;
+      height: 100vh;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div id="loader">Loading portfolio…</div>
+  <iframe id="pf"
+    src="https://storage.googleapis.com/victoria_bloomingdale_portfolio/Incident%20Response%20and%20Reporting%20-%20Storyline%20output/index.html"
+    loading="lazy"
+    onload="document.getElementById('loader').style.display='none'"></iframe>
+</body>
+</html>
